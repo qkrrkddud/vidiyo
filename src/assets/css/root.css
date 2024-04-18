@@ -1,0 +1,17 @@
+/*스와이퍼 슬라이더 작업 css입니다*/
+:root{
+  --swiper-navigation-size: 44px;
+  --swiper-theme-color:lightgray;
+  
+}
+
+.swiper-button-next,.swiper-button-prev{
+  opacity: 0;
+  transition: all 0.15s;
+}
+
+
+
+.mySwiper:hover .swiper-button-next,.mySwiper:hover .swiper-button-prev{
+  opacity: 0.8;
+}

@@ -1,0 +1,150 @@
+:root {
+  --main-color1: #444444;
+  --sub-color2: #171717;
+  --sub-color3: #EDEDED;
+  --button-color1: #DA0037;
+  --button-color2: #363636;
+  --button-color3: #000000;
+  --button-color4: #565656;
+  --button-color5: #b6b6b6;
+  --text-color1: #B3B3B3;
+  --text-color2: #7C7B84;
+  --text-color3: #FFFFFF;
+  --text-color4: #b3b3b3;
+
+  --size1: 2.25rem;  /* 36px */
+  --size2: 1.75rem;  /* 28px */
+  --size3: 1.5rem;   /* 24px */
+  --size4: 1rem;     /* 16px */
+  --size5: 0.75rem;  /* 12px */
+  --size6: 1.25rem;  /* 20px */
+  --size7: 1.125rem; /*18px*/
+  --size8: 0.875rem; /*14px*/
+}
+
+
+/* border-box 초기화 */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 가로모드 글씨 확대 초기화 */
+html {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 공백 초기화 */
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+/* 폰트 초기화 */
+body,
+button,
+input,
+select,
+table,
+textarea {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
+    helvetica, "Apple SD Gothic Neo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 링크 초기화 */
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 버튼 초기화 */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* 스타일 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+strong {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* table */
+table {
+  border: 0;
+  border-collapse: collaspe;
+  border-spacing: 0;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
